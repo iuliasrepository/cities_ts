@@ -63,9 +63,5 @@ export const getCitiesByName = (name: string): Promise<CommonLocality[]> => {
             throw new Error(response.statusText);
         })
         .then((result: ApiSearchResult):CommonLocality[] => result.result)
-        /*.then(({ result }: ApiSearchResult): Cities[] => result
-                .filter((location: (Cities | NonCities)): location is Cities =>
-                    location.localityType.code === LOCALITY_TYPE_CODE.CITY_CITY))*/
 }
 
-//добавить: пагинация - 100 элементов на странице, перебор страниц

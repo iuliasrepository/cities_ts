@@ -30,8 +30,7 @@ function App() {
         <Input getCityData={getCityData}/>
       </div>
       <div className={styles.tableBlock}>
-        <Table tableData={tableData} />
-          {console.log(tableData)}
+        <Table tableData={tableData} setTableData={setTableData} />
       </div>
     </div>
   );
